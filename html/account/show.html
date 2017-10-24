@@ -1,0 +1,112 @@
+<html>
+<head>
+<meta http-equiv="content-Type" content="text/html;charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+
+<title>アカウント一覧</title>
+
+<!-- CSS vendor -->
+<link href='../../css/vendor/bootstrap/bootstrap.css' rel="stylesheet">
+<link href='../../css/vendor/jquery/jquery-ui-1.10.4.custom.min.css' rel="stylesheet">
+<link href='../../css/vendor/fontawesome/font-awesome.css' rel="stylesheet">
+<link href='../../css/vendor/sticky_footer/sticky-footer.css' rel="stylesheet">
+<link href='../../css/vendor/bootstrap_datepicker/datepicker.css' rel="stylesheet">
+
+<!-- CSS Glue-net -->
+<link href='../../css/color/templateColor.css' rel="stylesheet">
+<link href='../../css/common/commonTableStyle.css' rel="stylesheet">
+<link href='' rel="stylesheet">
+
+<!-- JS vendor -->
+<script type="text/javascript" src='../../js/vendor/jquery/jquery-1.11.1.min.js'></script>
+<script type="text/javascript" src='../../js/vendor/jquery/jquery-ui.min.js'></script>
+<script type="text/javascript" src='../../js/vendor/bootstrap/bootstrap.min.js'></script>
+<script type="text/javascript" src='../../js/vendor/bootstrap/bootstrap-datepicker.js'></script>
+<script type="text/javascript" src='../../js/vendor/bootstrap/bootstrap-datepicker.ja.min.js'></script>
+<script type="text/javascript" src='../../js/vendor/jquery_blockUI/jquery.blockUI.js'></script>
+<script type="text/javascript" src='../../js/vendor/bootstrap_tab/tab.js'></script>
+<script type="text/javascript" src='../../js/common/keyControl.js'></script>
+
+<!-- JS Glue-net -->
+<script type="text/javascript" src='../../js/common/common.js'></script>
+
+<script src="../../js/common/commonGrid.js"></script>
+</head>
+
+<body>
+
+  <script type="text/javascript" src='../../js/afterLoginHeader.js'></script>
+  <form id="form" name="form" action="/OAA" method="post">
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-offset-1 col-md-10">
+          <h3>アカウント一覧</h3>
+        </div>
+      </div>
+
+      <!-- テーブル -->
+      <div class="row">
+        <div class="col-md-offset-1 col-md-10">
+          <table class="check_table table table-striped table-bordered table-hover table-condensed">
+            <thead class="main-background-color">
+              <tr>
+                <th class="text-center">No</th>
+                <th class="text-center">選択</th>
+                <th class="text-center">氏名</th>
+                <th class="text-center">アカウント名</th>
+                <th class="text-center">メールアドレス</th>
+                <th class="text-center">アカウント区分</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center"></td>
+                <td class="text-center"><input type='checkbox' name='checked' value=''></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+      <!-- ボタン -->
+      <div class="row">
+        <div class="col-md-offset-1 col-md-10" align="center">
+          <div style="margin-bottom: 20px"></div>
+          <table>
+            <tr>
+              <td style="vertical-align: middle;"><a href="./add.html" type="button" class="btn btn-primary" id="register">追加</a></td>
+              <td><label class="space" style="width: 30px;"></label></td>
+              <td style="vertical-align: middle;">
+                <button type="button" class="btn btn-warning" id="modify">修正</button>
+              </td>
+              <td><label class="space" style="width: 30px;"></label></td>
+              <td style="vertical-align: middle;">
+                <button type="button" class="btn btn-danger" id="delete">削除</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div></div>
+  </form>
+
+  <div id="footer">
+    <div style="margin-bottom: 20px"></div>
+    <div class="container">
+      <p class="help-block">(C) 2017 GSI Corp.</p>
+    </div>
+  </div>
+  <script src="../../js/contractMst/show.js"></script>
+</body>
+</html>
